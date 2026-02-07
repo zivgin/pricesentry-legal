@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — PriceSentry</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #0f1117;
+      color: #e2e4e9;
+      line-height: 1.7;
+      padding: 32px 16px 64px;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    .back { display: inline-block; color: #818cf8; text-decoration: none; font-size: 13px; margin-bottom: 24px; }
+    .back:hover { text-decoration: underline; }
+    h1 { font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+    .updated { color: #9ca3af; font-size: 13px; margin-bottom: 32px; }
+    h2 { font-size: 20px; font-weight: 600; color: #fff; margin: 32px 0 12px; padding-bottom: 8px; border-bottom: 1px solid #1e2130; }
+    h3 { font-size: 16px; font-weight: 600; color: #c8cad0; margin: 20px 0 8px; }
+    p { margin-bottom: 12px; font-size: 14px; color: #c8cad0; }
+    ul, ol { margin: 8px 0 12px 24px; font-size: 14px; color: #c8cad0; }
+    li { margin-bottom: 4px; }
+    a { color: #818cf8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    strong { color: #e2e4e9; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+    th, td { padding: 8px 12px; border: 1px solid #1e2130; text-align: left; }
+    th { background: #1a1d27; color: #fff; font-weight: 600; }
+    td { color: #c8cad0; }
+    hr { border: none; border-top: 1px solid #1e2130; margin: 32px 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="back" href="index.html">← Back to Legal</a>
+    <h1>PriceSentry Privacy Policy</h1>
+    <p class="updated"><strong>Last updated:</strong> February 7, 2025</p>
+
+    <h2>Overview</h2>
+    <p>PriceSentry is a browser extension that helps you track Amazon product prices across 16 international marketplaces. This privacy policy explains what data we collect, how we use it, and your rights regarding your personal information.</p>
+
+    <h2>Data We Collect</h2>
+
+    <h3>1. Product Information</h3>
+    <ul>
+      <li>Amazon product URLs you choose to track</li>
+      <li>Product titles, prices, and availability</li>
+      <li>Price history over time</li>
+      <li>Product variations (size, color, etc.)</li>
+    </ul>
+    <p><strong>Purpose:</strong> To track prices and show you price history charts.</p>
+
+    <h3>2. Crowdsourced Price History (Community Data)</h3>
+    <p><strong>How it works:</strong> When you track a product, your observed price data is automatically contributed to our shared community database. This crowdsourced model means ALL users benefit from richer historical price data.</p>
+    <p><strong>Data contributed:</strong></p>
+    <ul>
+      <li>Price points with timestamps (bucketed to nearest hour for privacy)</li>
+      <li>Product identifiers (ASIN, marketplace, canonical key)</li>
+      <li><strong><code>contributed_by</code> field:</strong> Your anonymous user ID (not visible to other users)</li>
+      <li><strong><code>source</code> field:</strong> How the data was collected (<code>page_visit</code> or <code>background</code>)</li>
+    </ul>
+    <p><strong>Purpose:</strong> To provide comprehensive historical price data for products, even those you haven't personally tracked. The more users contribute, the better the price history for everyone.</p>
+    <p><strong>Note:</strong> Your identity is never visible to other users. Only an anonymous identifier is stored with contributed data.</p>
+
+    <h3>3. Source Tracking</h3>
+    <p>We track how price data is collected:</p>
+    <ul>
+      <li><strong><code>page_visit</code>:</strong> Data collected when you visit an Amazon product page</li>
+      <li><strong><code>background</code>:</strong> Data collected during automated background checks</li>
+    </ul>
+    <p><strong>Purpose:</strong> To understand data freshness and optimize collection methods.</p>
+
+    <h3>4. Account Information (Optional)</h3>
+    <p>If you choose to create an account for cloud sync:</p>
+    <ul>
+      <li>Email address</li>
+      <li>Encrypted password (industry-standard hashing)</li>
+      <li>Unique referral code (6 characters)</li>
+    </ul>
+    <p><strong>Purpose:</strong> To sync your tracked products across devices and enable social features.</p>
+
+    <h3>5. Google OAuth (Optional)</h3>
+    <p>If you sign in with Google:</p>
+    <ul>
+      <li>Email address from your Google profile</li>
+      <li>Name (if provided by Google)</li>
+      <li>OAuth tokens (securely stored)</li>
+    </ul>
+    <p><strong>Purpose:</strong> To provide a convenient sign-in method without creating a separate password.</p>
+    <p><strong>Note:</strong> We never receive your Google password. You can revoke access anytime via your <a href="https://myaccount.google.com/permissions" target="_blank">Google Account settings</a>.</p>
+
+    <h3>6. User Preferences</h3>
+    <ul>
+      <li>Check interval settings</li>
+      <li>Notification preferences</li>
+      <li>Display settings</li>
+      <li>Alert thresholds (target prices, percentage drops)</li>
+    </ul>
+    <p><strong>Purpose:</strong> To customize the extension to your preferences.</p>
+
+    <h3>7. Product Sharing Data</h3>
+    <p>If you use the product sharing feature:</p>
+    <ul>
+      <li>Sender's email address (visible to recipient)</li>
+      <li>Recipient's email address (entered by sender)</li>
+      <li>Shared product details (ASIN, title, price, thumbnail, URL)</li>
+      <li>Share status (pending, delivered, archived)</li>
+      <li>Quantity requested</li>
+    </ul>
+    <p><strong>Purpose:</strong> To enable sharing products with friends and family.</p>
+    <p><strong>Rate limits:</strong> Maximum 10 shares per day to prevent spam.</p>
+
+    <h3>8. Friend Invites</h3>
+    <p>If you invite friends to install PriceSentry:</p>
+    <ul>
+      <li>Recipient's email address</li>
+      <li>Invitation status and timestamp</li>
+      <li>Your email (visible in invitation)</li>
+    </ul>
+    <p><strong>Purpose:</strong> To help you invite friends to use PriceSentry.</p>
+    <p><strong>Rate limits:</strong> Maximum 5 invites per day. Duplicate invites prevented for 30 days.</p>
+
+    <h3>9. Referral Codes &amp; Friendships</h3>
+    <ul>
+      <li>Your unique 6-character referral code</li>
+      <li>Friends list (bidirectional connections via referral codes)</li>
+      <li>Friend email addresses (visible to connected friends only)</li>
+    </ul>
+    <p><strong>Purpose:</strong> To enable friend connections and product sharing.</p>
+
+    <h3>10. Badge Progress (Gamification)</h3>
+    <ul>
+      <li>Badge unlock timestamps</li>
+      <li>Progress counters (products tracked, products viewed, deals found, days active)</li>
+      <li>Recently viewed ASINs (last 100, for Explorer badge)</li>
+      <li>First discovery flags</li>
+    </ul>
+    <p><strong>Purpose:</strong> To track your achievements and provide a rewarding experience.</p>
+
+    <h3>11. Purchase History (Optional)</h3>
+    <p>If you enable purchase tracking:</p>
+    <ul>
+      <li>Order dates and prices from Amazon order pages</li>
+      <li>Product identifiers</li>
+    </ul>
+    <p><strong>Purpose:</strong> To show you purchase history and price comparisons.</p>
+
+    <h2>How We Store Data</h2>
+    <ul>
+      <li><strong>Local Storage:</strong> All tracking data is stored locally in your browser by default using IndexedDB.</li>
+      <li><strong>Cloud Storage (Optional):</strong> If you sign up, data is stored in Supabase (a secure cloud database) and protected by Row Level Security (RLS) so only you can access your private data.</li>
+    </ul>
+
+    <h3>Data Isolation</h3>
+    <ul>
+      <li>Your personal product list is private to you</li>
+      <li>Crowdsourced price history is aggregated and anonymized</li>
+      <li>RLS policies ensure users cannot access other users' private data</li>
+      <li>Friends can only see each other's email addresses (not tracked products)</li>
+    </ul>
+
+    <h2>Data We Do NOT Collect</h2>
+    <ul>
+      <li>Personal financial information</li>
+      <li>Credit card or payment details</li>
+      <li>Browsing history outside of Amazon product pages</li>
+      <li>Keystrokes or mouse movements</li>
+      <li>Your Amazon account credentials</li>
+      <li>Personal identifying information beyond email (for accounts)</li>
+      <li>Your Google password (when using Google sign-in)</li>
+    </ul>
+
+    <h2>Third-Party Services</h2>
+    <ul>
+      <li><strong>Supabase:</strong> Cloud database, authentication, and shared price history. See <a href="https://supabase.com/privacy" target="_blank">Supabase Privacy Policy</a>.</li>
+      <li><strong>Google OAuth:</strong> Optional sign-in via Google. See <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</li>
+      <li><strong>Resend:</strong> Email delivery for sharing and invites. See <a href="https://resend.com/legal/privacy-policy" target="_blank">Resend Privacy Policy</a>.</li>
+      <li><strong>Chrome Extensions APIs:</strong> Storage, alarms, notifications, identity (for OAuth).</li>
+    </ul>
+
+    <h2>Data Sharing</h2>
+    <p>We do NOT:</p>
+    <ul>
+      <li>Sell your data to third parties</li>
+      <li>Share your data with advertisers</li>
+      <li>Use your data for profiling or targeting</li>
+      <li>Share individual user data with other users (except email with connected friends)</li>
+    </ul>
+    <p>We DO share:</p>
+    <ul>
+      <li>Aggregated, anonymous price history for the benefit of all users</li>
+      <li>Your email with friends you connect with via referral codes</li>
+      <li>Product details with recipients when you share items</li>
+    </ul>
+
+    <h2>Data Retention</h2>
+    <ul>
+      <li><strong>Local data:</strong> Stored until you uninstall the extension or clear it manually</li>
+      <li><strong>Cloud data:</strong> Stored until you delete your account</li>
+      <li><strong>Crowdsourced price history:</strong> Retained indefinitely for community benefit (with anonymous <code>contributed_by</code> reference)</li>
+      <li><strong>Old alerts:</strong> Auto-cleaned after 14 days</li>
+      <li><strong>Invitations:</strong> Deduplicated for 30 days</li>
+    </ul>
+
+    <h2>Your Rights</h2>
+    <p>You can:</p>
+    <ul>
+      <li><strong>Export your data</strong> anytime (Settings → Export)</li>
+      <li><strong>Delete local data</strong> (Settings → Clear Data)</li>
+      <li><strong>Delete your cloud account</strong> (Settings → Account → Delete Account)</li>
+      <li><strong>Opt out of cloud sync</strong> by not creating an account or disabling sync</li>
+      <li><strong>Remove friends</strong> from your friends list</li>
+      <li><strong>Revoke Google access</strong> via Google Account settings</li>
+    </ul>
+
+    <h3>Data Portability</h3>
+    <p>Export includes:</p>
+    <ul>
+      <li>All tracked products</li>
+      <li>Price history</li>
+      <li>User settings</li>
+    </ul>
+
+    <h3>Account Deletion</h3>
+    <p>To delete your cloud account and all associated data:</p>
+    <ol>
+      <li>Go to Settings → Account</li>
+      <li>Click "Delete Account"</li>
+      <li>Confirm deletion</li>
+    </ol>
+    <p>Or contact support via GitHub issues.</p>
+
+    <h2>GDPR Compliance (European Users)</h2>
+    <p>If you are located in the European Economic Area (EEA) or United Kingdom, you have additional rights under the General Data Protection Regulation (GDPR):</p>
+
+    <h3>Legal Basis for Processing</h3>
+    <ul>
+      <li><strong>Consent:</strong> For optional features like cloud sync, sharing, and Google sign-in</li>
+      <li><strong>Legitimate Interest:</strong> For core functionality (local price tracking) and service improvement</li>
+      <li><strong>Contract:</strong> To provide the service you requested</li>
+    </ul>
+
+    <h3>Your GDPR Rights</h3>
+    <ul>
+      <li><strong>Right to Access:</strong> Request a copy of your personal data</li>
+      <li><strong>Right to Rectification:</strong> Correct inaccurate personal data</li>
+      <li><strong>Right to Erasure:</strong> Request deletion of your personal data</li>
+      <li><strong>Right to Data Portability:</strong> Receive your data in a portable format (JSON export)</li>
+      <li><strong>Right to Object:</strong> Object to processing based on legitimate interest</li>
+      <li><strong>Right to Restrict Processing:</strong> Limit how we use your data</li>
+      <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time</li>
+    </ul>
+
+    <h3>Data Controller</h3>
+    <p>PriceSentry is operated by an individual developer. For GDPR inquiries, contact us via GitHub issues.</p>
+
+    <h3>International Data Transfers</h3>
+    <p>Data may be stored on Supabase servers located outside the EEA. Supabase provides appropriate safeguards for international transfers in compliance with GDPR.</p>
+
+    <h3>No Automated Decision-Making</h3>
+    <p>We do not use your data for automated decision-making or profiling that produces legal effects.</p>
+
+    <h2>CCPA Compliance (California Users)</h2>
+    <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA):</p>
+
+    <h3>Your CCPA Rights</h3>
+    <ul>
+      <li><strong>Right to Know:</strong> Request what personal information we collect, use, and disclose</li>
+      <li><strong>Right to Delete:</strong> Request deletion of your personal information</li>
+      <li><strong>Right to Opt-Out of Sale:</strong> We do NOT sell your personal information</li>
+      <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your rights</li>
+    </ul>
+
+    <h3>Categories of Personal Information Collected</h3>
+    <ul>
+      <li>Identifiers (email address)</li>
+      <li>Internet activity (product URLs tracked, price data)</li>
+      <li>Geolocation (marketplace/region inferred from Amazon domain)</li>
+    </ul>
+
+    <h3>Sources of Personal Information</h3>
+    <ul>
+      <li>Directly from you (account creation, product tracking)</li>
+      <li>From third parties (Google OAuth profile information)</li>
+      <li>Automatically (price data from Amazon pages)</li>
+    </ul>
+
+    <h3>Business Purpose for Collection</h3>
+    <ul>
+      <li>Providing the price tracking service</li>
+      <li>Enabling cloud sync and social features</li>
+      <li>Improving the service through aggregated analytics</li>
+    </ul>
+
+    <h3>No Sale of Personal Information</h3>
+    <p>We do NOT sell, rent, or trade your personal information to third parties for monetary or other valuable consideration.</p>
+
+    <h3>Contact for CCPA Requests</h3>
+    <p>Submit requests via GitHub issues. We will respond within 45 days.</p>
+
+    <h2>Security</h2>
+    <ul>
+      <li>All cloud data is protected by Row Level Security (RLS)</li>
+      <li>Passwords are encrypted using industry-standard hashing</li>
+      <li>API communications use HTTPS</li>
+      <li>OAuth tokens are securely stored</li>
+      <li>The extension uses minimal permissions required for functionality</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>For questions about this privacy policy, please open an issue at: <a href="https://github.com/zivgin/pricesentry/issues" target="_blank">https://github.com/zivgin/pricesentry/issues</a></p>
+
+    <h2>Changes</h2>
+    <p>We may update this policy occasionally. Significant changes will be noted in the extension update notes and this document will be updated with a new "Last updated" date.</p>
+
+    <hr />
+
+    <h2>Technical Appendix</h2>
+    <h3>Data Fields Stored</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Field</th>
+          <th>Stored Locally</th>
+          <th>Stored in Cloud</th>
+          <th>Shared/Visible</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Product URL</td><td>Yes</td><td>Yes</td><td>No</td></tr>
+        <tr><td>Product title</td><td>Yes</td><td>Yes</td><td>Yes (in shared items, public history)</td></tr>
+        <tr><td>Current price</td><td>Yes</td><td>Yes</td><td>Yes (anonymous contribution)</td></tr>
+        <tr><td>Price history</td><td>Yes</td><td>Yes</td><td>Yes (anonymous contribution)</td></tr>
+        <tr><td><code>contributed_by</code></td><td>No</td><td>Yes</td><td>Anonymous ID only</td></tr>
+        <tr><td><code>source</code></td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+        <tr><td>User email</td><td>No</td><td>Yes</td><td>Visible to friends only</td></tr>
+        <tr><td>Alert settings</td><td>Yes</td><td>Yes</td><td>No</td></tr>
+        <tr><td>Purchase history</td><td>Yes</td><td>Optional</td><td>No</td></tr>
+        <tr><td>Referral code</td><td>No</td><td>Yes</td><td>Shareable by user</td></tr>
+        <tr><td>Friends list</td><td>No</td><td>Yes</td><td>Visible to connected friends</td></tr>
+        <tr><td>Badge progress</td><td>Yes</td><td>Yes</td><td>No</td></tr>
+        <tr><td>Shared items sent</td><td>No</td><td>Yes</td><td>Visible to recipient</td></tr>
+        <tr><td>Shared items received</td><td>No</td><td>Yes</td><td>Visible to sender</td></tr>
+        <tr><td>Invite history</td><td>No</td><td>Yes</td><td>No</td></tr>
+        <tr><td>Viewed ASINs (badges)</td><td>Yes</td><td>Yes</td><td>No</td></tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
