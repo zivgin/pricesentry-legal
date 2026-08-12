@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Privacy Policy — PriceSentry</title>
+  <title>Privacy Policy - PriceSentry</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -37,16 +37,16 @@
   <div class="container">
     <a class="back" href="index.html">← Back to Legal</a>
     <h1>PriceSentry Privacy Policy</h1>
-    <p class="updated"><strong>Last updated:</strong> February 7, 2026</p>
+    <p class="updated"><strong>Last updated:</strong> August 12, 2026</p>
 
     <h2>Overview</h2>
-    <p>PriceSentry is a browser extension that helps you track Amazon product prices across 16 international marketplaces. This privacy policy explains what data we collect, how we use it, and your rights regarding your personal information.</p>
+    <p>PriceSentry is a browser extension that helps you track product prices across a range of online stores, including Amazon (16 international marketplaces, including Amazon.ae), Sharaf DG, Zara, H&amp;M, IKEA, Home Centre, Kibsons, Brands For Less, and 6th Street. This privacy policy explains what data we collect, how we use it, and your rights regarding your personal information.</p>
 
     <h2>Data We Collect</h2>
 
     <h3>1. Product Information</h3>
     <ul>
-      <li>Amazon product URLs you choose to track</li>
+      <li>Product URLs you choose to track, from the supported stores</li>
       <li>Product titles, prices, and availability</li>
       <li>Price history over time</li>
       <li>Product variations (size, color, etc.)</li>
@@ -54,21 +54,21 @@
     <p><strong>Purpose:</strong> To track prices and show you price history charts.</p>
 
     <h3>2. Crowdsourced Price History (Community Data)</h3>
-    <p><strong>How it works:</strong> When you track a product, your observed price data is automatically contributed to our shared community database. This crowdsourced model means ALL users benefit from richer historical price data.</p>
+    <p><strong>How it works:</strong> When you are signed in and track or view a product, the observed price data is contributed to our shared community database. This crowdsourced model means all users benefit from richer historical price data. If you use PriceSentry locally without an account, no price data is contributed.</p>
     <p><strong>Data contributed:</strong></p>
     <ul>
-      <li>Price points with timestamps (bucketed to nearest hour for privacy)</li>
-      <li>Product identifiers (ASIN, marketplace, canonical key)</li>
-      <li><strong><code>contributed_by</code> field:</strong> Your anonymous user ID (not visible to other users)</li>
-      <li><strong><code>source</code> field:</strong> How the data was collected (<code>page_visit</code> or <code>background</code>)</li>
+      <li>Price points with timestamps</li>
+      <li>Product identifiers (for example ASIN or a per-store canonical key, marketplace/store)</li>
+      <li><strong><code>contributed_by</code> field:</strong> your account identifier (user ID), stored on our servers with the contribution</li>
+      <li><strong><code>source</code> field:</strong> how the data was collected (<code>page_visit</code> or <code>background</code>)</li>
     </ul>
-    <p><strong>Purpose:</strong> To provide comprehensive historical price data for products, even those you haven't personally tracked. The more users contribute, the better the price history for everyone.</p>
-    <p><strong>Note:</strong> Your identity is never visible to other users. Only an anonymous identifier is stored with contributed data.</p>
+    <p><strong>Purpose:</strong> To provide comprehensive historical price data for products, even those you have not personally tracked. The more users contribute, the better the price history for everyone.</p>
+    <p><strong>What other users see:</strong> The community price history and deal feed are aggregated. Your identity, email, and account are never shown to other users. The <code>contributed_by</code> identifier is your real account ID kept on our servers (so we can operate the Service, prevent abuse, and delete your data on request); it is not a random anonymous token, and it is never exposed in the community feed or any public response. Contribution is automatic for signed-in users and there is not currently a separate opt-out toggle; to avoid contributing entirely, use PriceSentry without an account.</p>
 
     <h3>3. Source Tracking</h3>
     <p>We track how price data is collected:</p>
     <ul>
-      <li><strong><code>page_visit</code>:</strong> Data collected when you visit an Amazon product page</li>
+      <li><strong><code>page_visit</code>:</strong> Data collected when you visit a supported product page</li>
       <li><strong><code>background</code>:</strong> Data collected during automated background checks</li>
     </ul>
     <p><strong>Purpose:</strong> To understand data freshness and optimize collection methods.</p>
@@ -102,16 +102,21 @@
     <p><strong>Purpose:</strong> To customize the extension to your preferences.</p>
 
     <h3>7. Product Sharing Data</h3>
-    <p>If you use the product sharing feature:</p>
+    <p>PriceSentry offers two ways to share a deal:</p>
+    <ul>
+      <li><strong>Quick share (WhatsApp, Telegram, copy link/image):</strong> These open a prefilled message in the app you pick, or copy content to your clipboard. No account is needed and PriceSentry's servers are not involved, so we do not collect anything for these.</li>
+      <li><strong>Email share to a friend (requires an account):</strong> processed through our backend, which stores the data below.</li>
+    </ul>
+    <p>For email shares we store:</p>
     <ul>
       <li>Sender's email address (visible to recipient)</li>
       <li>Recipient's email address (entered by sender)</li>
-      <li>Shared product details (ASIN, title, price, thumbnail, URL)</li>
+      <li>Shared product details (identifier, title, price, thumbnail, URL)</li>
       <li>Share status (pending, delivered, archived)</li>
-      <li>Quantity requested</li>
+      <li>Quantity requested, and any optional note</li>
     </ul>
     <p><strong>Purpose:</strong> To enable sharing products with friends and family.</p>
-    <p><strong>Rate limits:</strong> Maximum 10 shares per day to prevent spam.</p>
+    <p><strong>Rate limits:</strong> Maximum 10 email shares per day to prevent spam.</p>
 
     <h3>8. Friend Invites</h3>
     <p>If you invite friends to install PriceSentry:</p>
@@ -135,7 +140,7 @@
     <ul>
       <li>Badge unlock timestamps</li>
       <li>Progress counters (products tracked, products viewed, deals found, days active)</li>
-      <li>Recently viewed ASINs (last 100, for Explorer badge)</li>
+      <li>Recently viewed product identifiers (last 100, for the Explorer badge)</li>
       <li>First discovery flags</li>
     </ul>
     <p><strong>Purpose:</strong> To track your achievements and provide a rewarding experience.</p>
@@ -148,7 +153,25 @@
     </ul>
     <p><strong>Purpose:</strong> To show you purchase history and price comparisons.</p>
 
-    <h3>12. Terms &amp; Privacy Acceptance Records</h3>
+    <h3>12. Affiliate Click Data</h3>
+    <p>PriceSentry is free and shows no ads. Some links to stores may be affiliate links (see the <a href="terms.html">Terms of Service</a>, Section 8). When affiliate links are enabled and you click one, we may record:</p>
+    <ul>
+      <li>Which store and which surface in the extension the click came from</li>
+      <li>Which affiliate network was used (for example Amazon Associates, Admitad, ArabClicks)</li>
+      <li>Your account ID, if you are signed in</li>
+      <li>A timestamp</li>
+    </ul>
+    <p><strong>Purpose:</strong> To measure whether affiliate links work and to support the free Service. Affiliate commissions never change the price you pay.</p>
+
+    <h3>13. Diagnostic / Parser Health Data</h3>
+    <p>To detect when a store changes its website and breaks price reading, the extension records lightweight technical signals, for example that the price could not be parsed on a given store, with no product or personal content. Signed-in users' health signals may be stored in the cloud to help us spot and fix broken stores quickly.</p>
+    <p><strong>Purpose:</strong> Reliability and troubleshooting.</p>
+
+    <h3>14. Security &amp; Abuse-Prevention Logs</h3>
+    <p>For certain account and security-sensitive actions, our backend keeps an audit log that may include your account ID, the action taken, your IP address, and your browser's user agent string.</p>
+    <p><strong>Purpose:</strong> To protect accounts, prevent abuse, and maintain a security trail.</p>
+
+    <h3>15. Terms &amp; Privacy Acceptance Records</h3>
     <p>When you accept our Terms of Service and Privacy Policy, we record:</p>
     <ul>
       <li>Your user ID and the terms version accepted</li>
@@ -168,7 +191,7 @@
     <h3>Data Isolation</h3>
     <ul>
       <li>Your personal product list is private to you</li>
-      <li>Crowdsourced price history is aggregated and anonymized</li>
+      <li>Crowdsourced price history is aggregated and is not shown against your identity to other users</li>
       <li>RLS policies ensure users cannot access other users' private data</li>
       <li>Friends can only see each other's email addresses (not tracked products)</li>
     </ul>
@@ -177,10 +200,10 @@
     <ul>
       <li>Personal financial information</li>
       <li>Credit card or payment details</li>
-      <li>Browsing history outside of Amazon product pages</li>
+      <li>Browsing history outside of the supported stores' product pages</li>
       <li>Keystrokes or mouse movements</li>
-      <li>Your Amazon account credentials</li>
-      <li>Personal identifying information beyond email (for accounts)</li>
+      <li>Your store account credentials (for example your Amazon password)</li>
+      <li>Personal identifying information beyond email (for accounts) and the security logs described above</li>
       <li>Your Google password (when using Google sign-in)</li>
     </ul>
 
@@ -188,8 +211,11 @@
     <ul>
       <li><strong>Supabase:</strong> Cloud database, authentication, and shared price history. See <a href="https://supabase.com/privacy" target="_blank">Supabase Privacy Policy</a>.</li>
       <li><strong>Google OAuth:</strong> Optional sign-in via Google. See <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</li>
-      <li><strong>Resend:</strong> Email delivery for sharing and invites. See <a href="https://resend.com/legal/privacy-policy" target="_blank">Resend Privacy Policy</a>.</li>
+      <li><strong>Resend:</strong> Email delivery for friend shares and invites. See <a href="https://resend.com/legal/privacy-policy" target="_blank">Resend Privacy Policy</a>.</li>
+      <li><strong>Affiliate networks (Amazon Associates, Admitad, ArabClicks):</strong> When affiliate links are enabled, clicks may pass through these networks. Each has its own privacy practices.</li>
+      <li><strong>Currency exchange rate API (open.er-api.com):</strong> Used to convert prices between currencies; requests do not include your identity.</li>
       <li><strong>Chrome Extensions APIs:</strong> Storage, alarms, notifications, identity (for OAuth).</li>
+      <li><strong>WhatsApp / Telegram:</strong> Contacted only when you choose to quick-share; we send them nothing ourselves, your browser simply opens their share link.</li>
     </ul>
 
     <h2>Data Sharing</h2>
@@ -202,7 +228,7 @@
     </ul>
     <p>We DO share:</p>
     <ul>
-      <li>Aggregated, anonymous price history for the benefit of all users</li>
+      <li>Aggregated price history for the benefit of all users, without showing your identity</li>
       <li>Your email with friends you connect with via referral codes</li>
       <li>Product details with recipients when you share items</li>
     </ul>
@@ -211,7 +237,7 @@
     <ul>
       <li><strong>Local data:</strong> Stored until you uninstall the extension or clear it manually</li>
       <li><strong>Cloud data:</strong> Stored until you delete your account</li>
-      <li><strong>Crowdsourced price history:</strong> Retained indefinitely for community benefit (with anonymous <code>contributed_by</code> reference)</li>
+      <li><strong>Crowdsourced price history:</strong> Retained for community benefit; the linked <code>contributed_by</code> account reference is removed or dissociated when you delete your account</li>
       <li><strong>Old alerts:</strong> Auto-cleaned after 14 days</li>
       <li><strong>Invitations:</strong> Deduplicated for 30 days</li>
       <li><strong>Terms acceptance records:</strong> Retained indefinitely as legal audit evidence (all versions preserved)</li>
@@ -223,7 +249,7 @@
       <li><strong>Export your data</strong> anytime (Settings → Export)</li>
       <li><strong>Delete local data</strong> (Settings → Clear Data)</li>
       <li><strong>Delete your cloud account</strong> (Settings → Account → Delete Account)</li>
-      <li><strong>Opt out of cloud sync</strong> by not creating an account or disabling sync</li>
+      <li><strong>Opt out of cloud sync and community contribution</strong> by not creating an account</li>
       <li><strong>Remove friends</strong> from your friends list</li>
       <li><strong>Revoke Google access</strong> via Google Account settings</li>
     </ul>
@@ -251,7 +277,7 @@
     <h3>Legal Basis for Processing</h3>
     <ul>
       <li><strong>Consent:</strong> For optional features like cloud sync, sharing, and Google sign-in</li>
-      <li><strong>Legitimate Interest:</strong> For core functionality (local price tracking) and service improvement</li>
+      <li><strong>Legitimate Interest:</strong> For core functionality (local price tracking), service improvement, security and abuse prevention, and supporting the free Service through affiliate links</li>
       <li><strong>Contract:</strong> To provide the service you requested</li>
       <li><strong>Legal Obligation:</strong> For maintaining records of consent (terms acceptance audit trail)</li>
     </ul>
@@ -289,23 +315,25 @@
 
     <h3>Categories of Personal Information Collected</h3>
     <ul>
-      <li>Identifiers (email address)</li>
-      <li>Internet activity (product URLs tracked, price data)</li>
-      <li>Geolocation (marketplace/region inferred from Amazon domain)</li>
-      <li>Device information (user agent string, collected only during terms acceptance for legal audit purposes)</li>
+      <li>Identifiers (email address, account ID)</li>
+      <li>Internet or network activity (product URLs tracked, price data, affiliate link clicks)</li>
+      <li>Geolocation (marketplace/region inferred from the store domain)</li>
+      <li>Device and connection information (IP address and user agent string, collected for security logs and at terms acceptance)</li>
     </ul>
 
     <h3>Sources of Personal Information</h3>
     <ul>
       <li>Directly from you (account creation, product tracking)</li>
       <li>From third parties (Google OAuth profile information)</li>
-      <li>Automatically (price data from Amazon pages)</li>
+      <li>Automatically (price data from store pages, security logs)</li>
     </ul>
 
     <h3>Business Purpose for Collection</h3>
     <ul>
       <li>Providing the price tracking service</li>
       <li>Enabling cloud sync and social features</li>
+      <li>Security and abuse prevention</li>
+      <li>Supporting the free Service through affiliate links</li>
       <li>Improving the service through aggregated analytics</li>
     </ul>
 
@@ -345,10 +373,10 @@
       </thead>
       <tbody>
         <tr><td>Product URL</td><td>Yes</td><td>Yes</td><td>No</td></tr>
-        <tr><td>Product title</td><td>Yes</td><td>Yes</td><td>Yes (in shared items, public history)</td></tr>
-        <tr><td>Current price</td><td>Yes</td><td>Yes</td><td>Yes (anonymous contribution)</td></tr>
-        <tr><td>Price history</td><td>Yes</td><td>Yes</td><td>Yes (anonymous contribution)</td></tr>
-        <tr><td><code>contributed_by</code></td><td>No</td><td>Yes</td><td>Anonymous ID only</td></tr>
+        <tr><td>Product title</td><td>Yes</td><td>Yes</td><td>Yes (in shared items, community history)</td></tr>
+        <tr><td>Current price</td><td>Yes</td><td>Yes</td><td>Yes (aggregated, no identity)</td></tr>
+        <tr><td>Price history</td><td>Yes</td><td>Yes</td><td>Yes (aggregated, no identity)</td></tr>
+        <tr><td><code>contributed_by</code></td><td>No</td><td>Yes</td><td>No (account ID, server-side only)</td></tr>
         <tr><td><code>source</code></td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
         <tr><td>User email</td><td>No</td><td>Yes</td><td>Visible to friends only</td></tr>
         <tr><td>Alert settings</td><td>Yes</td><td>Yes</td><td>No</td></tr>
@@ -359,11 +387,14 @@
         <tr><td>Shared items sent</td><td>No</td><td>Yes</td><td>Visible to recipient</td></tr>
         <tr><td>Shared items received</td><td>No</td><td>Yes</td><td>Visible to sender</td></tr>
         <tr><td>Invite history</td><td>No</td><td>Yes</td><td>No</td></tr>
-        <tr><td>Viewed ASINs (badges)</td><td>Yes</td><td>Yes</td><td>No</td></tr>
+        <tr><td>Viewed product IDs (badges)</td><td>Yes</td><td>Yes</td><td>No</td></tr>
+        <tr><td>Affiliate click log</td><td>No</td><td>Yes</td><td>No</td></tr>
+        <tr><td>Parser health signals</td><td>Yes</td><td>Yes (if signed in)</td><td>No</td></tr>
+        <tr><td>Security audit log (account ID, IP, user agent)</td><td>No</td><td>Yes</td><td>No</td></tr>
         <tr><td>Terms acceptance timestamp</td><td>No</td><td>Yes</td><td>No</td></tr>
         <tr><td>Terms version accepted</td><td>No</td><td>Yes</td><td>No</td></tr>
         <tr><td>Link click timestamps</td><td>No</td><td>Yes</td><td>No</td></tr>
-        <tr><td>User agent (acceptance only)</td><td>No</td><td>Yes</td><td>No</td></tr>
+        <tr><td>User agent (acceptance + security logs)</td><td>No</td><td>Yes</td><td>No</td></tr>
       </tbody>
     </table>
   </div>
