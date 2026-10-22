@@ -37,7 +37,7 @@
   <div class="container">
     <a class="back" href="index.html">← Back to Legal</a>
     <h1>PriceSentry Privacy Policy</h1>
-    <p class="updated"><strong>Last updated:</strong> October 14, 2026</p>
+    <p class="updated"><strong>Last updated:</strong> October 22, 2026</p>
 
     <h2>Overview</h2>
     <p>PriceSentry is a browser extension that helps you track product prices across a range of online stores, including Amazon (16 international marketplaces, including Amazon.ae), Sharaf DG, Zara, H&amp;M, IKEA, Home Centre, Kibsons, Brands For Less, iHerb, and 6th Street. This privacy policy explains what data we collect, how we use it, and your rights regarding your personal information.</p>
@@ -145,13 +145,16 @@
     </ul>
     <p><strong>Purpose:</strong> To track your achievements and provide a rewarding experience.</p>
 
-    <h3>11. Purchase History (Optional)</h3>
-    <p>If you enable purchase tracking:</p>
+    <h3>11. What You Paid (Amazon Order History)</h3>
+    <p>To show whether you got a good price, the extension reads your Amazon order history and order detail pages when you open them, or when you click "Fetch my prices" (which opens your order history in a background tab). From those pages it records, per product:</p>
     <ul>
-      <li>Order dates and prices from Amazon order pages</li>
-      <li>Product identifiers</li>
+      <li>Product identifier (ASIN) and title</li>
+      <li>Price you paid, currency, and quantity</li>
+      <li>Order date, Amazon order number, and the return-by date when Amazon shows one</li>
     </ul>
-    <p><strong>Purpose:</strong> To show you purchase history and price comparisons.</p>
+    <p>It does not record payment details, addresses, or invoices.</p>
+    <p><strong>Where it is stored:</strong> locally in your browser (Chrome extension storage). It is synced to PriceSentry's servers only if you have cloud sync enabled. It is never sold or shared with anyone.</p>
+    <p><strong>Purpose:</strong> To show "what you paid" on product pages and, if you keep the setting on, alert you when something you bought gets cheaper while it can still be returned. You can turn the alert off in Settings, and removing the extension deletes this data.</p>
 
     <h3>12. Affiliate Click Data</h3>
     <p>PriceSentry is free and shows no ads. Some links to stores may be affiliate links (see the <a href="terms.html">Terms of Service</a>, Section 8). When affiliate links are enabled and you click one, we may record:</p>
@@ -200,7 +203,7 @@
     <ul>
       <li>Personal financial information</li>
       <li>Credit card or payment details</li>
-      <li>Browsing history outside of the supported stores' product pages</li>
+      <li>Browsing history outside of the supported stores' product pages and your Amazon order pages (used only for What You Paid, above)</li>
       <li>Keystrokes or mouse movements</li>
       <li>Your store account credentials (for example your Amazon password)</li>
       <li>Personal identifying information beyond email (for accounts) and the security logs described above</li>
@@ -380,7 +383,7 @@
         <tr><td><code>source</code></td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
         <tr><td>User email</td><td>No</td><td>Yes</td><td>Visible to friends only</td></tr>
         <tr><td>Alert settings</td><td>Yes</td><td>Yes</td><td>No</td></tr>
-        <tr><td>Purchase history</td><td>Yes</td><td>Optional</td><td>No</td></tr>
+        <tr><td>What you paid (Amazon orders)</td><td>Yes</td><td>Only if sync is enabled</td><td>No</td></tr>
         <tr><td>Referral code</td><td>No</td><td>Yes</td><td>Shareable by user</td></tr>
         <tr><td>Friends list</td><td>No</td><td>Yes</td><td>Visible to connected friends</td></tr>
         <tr><td>Badge progress</td><td>Yes</td><td>Yes</td><td>No</td></tr>
